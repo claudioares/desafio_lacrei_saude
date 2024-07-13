@@ -81,7 +81,7 @@ As páginas foram desenvolvidas para serem totalmente responsivas, garantindo um
 ## Testes
 Para executar os testes, utilize o comando:
 ```bash
-npm run cypress
+npm run cypress:web
 ```
 
 ## Imagens
