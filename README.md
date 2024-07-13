@@ -105,6 +105,7 @@ npm run cypress:web
 
 ## Deploy
 A aplicação foi deployada utilizando Vercel e pode ser acessada através do seguinte link:
+https://desafio-lacrei-saude-delta.vercel.app/
 
 ## Considerações Finais
 Este projeto foi desenvolvido com o objetivo de concluir o desafio da Lacrei saúde.
