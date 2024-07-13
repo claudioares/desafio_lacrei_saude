@@ -5,9 +5,9 @@ import { Button } from "@/components/button/button";
 
 export function HeaderBunner () {
     const buttonsData = [
-        {name:'Para pacientes', color:'#018762', link:'https://paciente.lacreisaude.com.br/'},
-        {name:'Para profissionais', color:'#018762', link:'https://profissional.lacreisaude.com.br/'},
-        {name:'Busca Avançada', color:'#018762', link:'/advancedsearch'}
+        {id:'patients', name:'Para pacientes', color:'#018762', link:'https://paciente.lacreisaude.com.br/'},
+        { id:'professionals', name:'Para profissionais', color:'#018762', link:'https://profissional.lacreisaude.com.br/'},
+        {id:'advanced_search', name:'Busca Avançada', color:'#018762', link:'/advancedsearch'}
     ]
     return(
         <ContainerBunner $fly={bunner.src}>
@@ -24,7 +24,7 @@ export function HeaderBunner () {
 
             <DivButton>
                 {buttonsData.map((data, index)=>(
-                    <Button name={data.name} color={data.color} link={data.link} key={index}/>
+                    <Button id={data.id} name={data.name} color={data.color} link={data.link} key={index}/>
                 ))}
             </DivButton>
         </ContainerBunner>

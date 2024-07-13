@@ -148,11 +148,13 @@ export default function AdvancedSearch () {
                             color={"#018762 "} 
                             link={""}
                             type="submit"
+                            id="search"
                         />
                         <Button 
                             name={"Voltar"}
                             color={"#018762 "} 
                             link={"/"}
+                            id="return"
                         />
                     </FormAdvancedSeach>
                 </SectionDefault>

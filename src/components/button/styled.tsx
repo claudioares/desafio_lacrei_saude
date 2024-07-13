@@ -6,7 +6,7 @@ export const ButtonDefault = styled.button<{color:string}>`
     background: ${props => props.color || 'white'};
     padding: 0 3.2rem;
     color: ${props => props.color ? "white" : "#018762"};
-    width: 15.6rem ;
+    width: 15.6rem;
     height: 4.8rem;
 
     border-radius: 0.8rem;
