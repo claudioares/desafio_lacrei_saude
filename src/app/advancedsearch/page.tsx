@@ -7,29 +7,21 @@ import Image from "next/image";
 import imgSearch from '../../../public/bunner/img_search.jpg';
 import { Button } from "@/components/button/button";
 import { Footer } from "@/components/footer/footer";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 
 
-export default function advancedSearch () {
+export default function AdvancedSearch () {
 
     const [code, setCode] = useState<string>('');
     const [selectedSpecialty, setSelectedSpecialty] = useState<string>('');
     const [selectedGender, setSelectedGender] = useState<string>('');
     const [selectedExpert, setSelectedExpert] = useState<string>('');
 
-    const [dataForm, setDataForm] = useState<{}>()
 
     function handleSubmit (e:FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
-        const dataFormSubmit = {
-            code,
-            selectedSpecialty,
-            selectedGender,
-            selectedExpert
-        }
 
-        setDataForm(dataFormSubmit);
         alert(`
             Aqui você encontraria uma implementação que, em uma versão completa, redirecionaria para os cards de profissionais que atendem ao perfil selecionado pelo usuário. Como esta é apenas uma página demonstrativa, a funcionalidade completa não foi implementada.
         `);
